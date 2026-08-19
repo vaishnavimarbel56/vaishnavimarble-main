@@ -1,0 +1,86 @@
+.vaish-dragdrop-root {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: inherit;
+}
+
+.vaish-dropzone {
+  border: 2px dashed rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  background-color: var(--vaish-bg, #fff);
+}
+
+.vaish-dropzone--active {
+  border-color: rgba(59, 130, 246, 0.8);
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.12);
+  background-color: rgba(59, 130, 246, 0.02);
+}
+
+.vaish-file-input {
+  display: none;
+}
+
+.vaish-dropzone__content {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.vaish-drop-illustration {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.vaish-droptext {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.vaish-file-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vaish-file-item {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+}
+
+.vaish-file-meta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.vaish-file-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.vaish-file-size {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .vaish-dropzone {
+    padding: 18px;
+  }
+  .vaish-drop-illustration {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,18 @@
+/* Small site-wide animation utilities used by PageShell.
+   This keeps animations declarative and low-risk: a short fade-and-up
+   used on page mount for a subtle entrance effect. */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-enter {
+  animation: fadeInUp 360ms ease both;
+}

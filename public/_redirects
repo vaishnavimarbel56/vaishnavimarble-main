@@ -1,0 +1,3 @@
+# removed by revert: Netlify redirects caused worker build failure
+# Original intent: /*    /index.html   200
+# Keeping this file commented out to avoid routing changes while CI troubleshoots
